@@ -1,0 +1,305 @@
+/* ================= LOGIN PAGE ================= */
+
+.login-page {
+  height: 100vh;
+  background: url("https://homesbuildings.com/wp-content/uploads/2025/02/sail.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass effect box */
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 45px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  width: 420px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* LOGO + TITLE (LOGIN ONLY) */
+.login-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+/* BIGGER LOGO */
+.login-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  background: #dbeafe;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* SAIL TEXT */
+.main-title {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* SUB TEXT */
+.sub-title {
+  font-size: 28px;
+  color: #00e5ff;
+}
+
+.login-title {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  font-size: 20px;
+  color: #cbd5f5;
+}
+
+/* INPUTS - ALL SAME SIZE */
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* BUTTON */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #00c6d7;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 30px;
+  background: url("https://sailcareers.com/SliderImage/7.jpg") no-repeat center/cover;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay */
+.dashboard-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dashboard-container > * {
+  position: relative;
+}
+
+/* TITLE */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* LOGO + TEXT */
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LOGO */
+.dashboard-logo {
+  width: 95px;
+  height: 95px;
+  border-radius: 10px;
+  padding: 10px;
+  background: #dbeafe;
+}
+
+/* TEXT */
+.sail-text {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.company-name {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #cbd5f5;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 14px;
+  width: 230px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* COLORS */
+.card:nth-child(1) {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+/* ================= ADMIN FORM ================= */
+
+.form-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #00e5ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ================= TABLE ================= */
+
+.table-box {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table-box table {
+  width: 100%;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.table-box th {
+  background: #00e5ff;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.table-box td {
+  padding: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Zebra */
+.table-box tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.table-box tr:hover {
+  background: #dbeafe;
+  transition: 0.3s;
+}
+
+/* VALUES */
+.temp {
+  color: orange;
+  font-weight: bold;
+}
+
+.output {
+  color: blue;
+  font-weight: bold;
+}
+
+.eff {
+  color: green;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.edit-btn {
+  background: #2563eb;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    width: 90%;
+  }
+
+  .overlay {
+    width: 90%;
+  }
+}
